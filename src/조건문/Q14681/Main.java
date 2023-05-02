@@ -48,15 +48,13 @@ public class Main {
                 System.out.print(4);
             }
         }
-
         else {
             if(Y > 0) {
                 System.out.print(2);
             }
             else {
-                System.out.print(3);
+                System.out.print(33);
             }
         }
     }
-
 }
