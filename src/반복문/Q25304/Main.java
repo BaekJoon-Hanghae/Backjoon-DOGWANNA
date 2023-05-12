@@ -8,9 +8,22 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
         StringBuilder sb = new StringBuilder();
-//        sb.append();
+
+        int X = Integer.parseInt(br.readLine());
+        int N = Integer.parseInt(br.readLine());
+        int result = 0;
+
+        for(int i=0; i<N; i++){
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            result += (Integer.parseInt(st.nextToken()) * Integer.parseInt(st.nextToken()));
+        }
+
+        if(result == X){
+            sb.append("Yes");
+        }else{
+            sb.append("No");
+        }
         System.out.println(sb);
         br.close();
     }
