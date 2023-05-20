@@ -11,7 +11,7 @@ public class Main {
 
         String S = br.readLine();
         int i = Integer.parseInt(br.readLine());
-//
+//??
         sb.append(S.charAt(i-1));
         System.out.println(sb);
         br.close();
