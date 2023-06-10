@@ -13,11 +13,7 @@ public class Main {
 //            System.out.println(str);
 //        }
 //        br.close();
-        String[] arr = new String[10];
 
-        for(int i=0; i<10; i++){
-            arr[i] = String.valueOf(i);
-        }
 
 
     }
