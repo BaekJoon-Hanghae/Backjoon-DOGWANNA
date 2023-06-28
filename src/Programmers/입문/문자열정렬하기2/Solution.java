@@ -1,20 +1,27 @@
 package Programmers.입문.문자열정렬하기2;
 
-import java.util.Arrays;
-
 public class Solution {
     public static void main(String[] args) {
             Solution s = new Solution();
 
-            String result = s.solution("Bcad");
+            int result = s.solution(15);
         System.out.println(result);
         }
 
-    public String solution(String my_string) {
-        my_string = my_string.toLowerCase();
-        char[] arr = my_string.toCharArray();
-        Arrays.sort(arr);
+    public int solution(int n) {
+        int answer = 0;
 
-        return String.valueOf(arr);
+        for(int i=1; i<=n; i++) {
+            int cnt = 0;
+            for(int j=1; j<=i; j++){
+                if(i%j==0){
+                    cnt++;
+                }
+            }
+            if(cnt >= 3){
+                answer++;
+            }
+        }
+        return answer;
     }
 }
