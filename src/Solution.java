@@ -1,24 +1,23 @@
+import java.util.HashMap;
+import java.util.StringTokenizer;
+
 public class Solution {
     public static void main(String[] args) {
-            Solution s = new Solution();
+        Solution s = new Solution();
 
-            int result = s.solution(29423);
+        String result = s.solution("");
+//            int result = s.solution(0);
         System.out.println(result);
-        }
+    }
 
-    public int solution(int order) {
-        int answer = 0;
-
-        String str = Integer.toString(order);
-        int[] arrNum = new int[str.length()];
-
-        for(int i=0; i<str.length(); i++){
-            arrNum[i] = str.charAt(i) - '0';
-
-            if(arrNum[i] == 3 || arrNum[i] == 6 || arrNum[i] == 9){
-                answer += 1;
-            }
-        }
+    public String solution(String letter) {
+        String answer = "";
         return answer;
     }
+
+//    public int solution(int letter) {
+//        int answer = 0;
+//
+//        return answer;
+//    }
 }
