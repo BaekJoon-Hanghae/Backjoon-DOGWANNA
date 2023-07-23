@@ -4,19 +4,22 @@ public class Solution {
     public static void main(String[] args) {
         Solution s = new Solution();
 
-        String result = s.solution("");
-//            int result = s.solution(0);
+        int result = s.solution("olleh","hello");
         System.out.println(result);
     }
 
-    public String solution(String letter) {
-        String answer = "";
-        return answer;
+    public int solution(String before, String after) {
+        // 각 요소들과 요소별 갯수를 세어서 비교해야한다..
+        char[] arr = before.toCharArray();
+        StringBuffer covertStr = new StringBuffer();
+        for(int i=arr.length-1; i>=0; i--){
+            covertStr.append(arr[i]);
+        }
+
+        if(covertStr.toString().equals(after)){
+            return 1;
+        }
+        return 0;
     }
 
-//    public int solution(int letter) {
-//        int answer = 0;
-//
-//        return answer;
-//    }
 }
